@@ -6,6 +6,11 @@ h3 {
     margin: 0.1rem;
     text-align: center;
 }
+footer {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
   
 .geral {
     padding: 1rem;
