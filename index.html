@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="geral">
+        <h1 class="title center">Conversor de Unidades!</h1>
+        <div class="center-multiple">
+          <label for="tipo">Selecione o tipo de unidade:</label>
+          <select name="tipo" id="tipo" class="center" onchange="tipoUnidade()">
+            <option value="">Selecione</option>
+            <option value="temp">Temperatura</option>
+            <option value="time">Tempo</option>
+            <option value="dist">Comprimento</option>
+            <option value="mas">Massa</option>
+            <option value="moe">Monetária</option>
+          </select>
+        </div>
+        <h3 id="subTitle" class="off"></h3>
+        
+        <div id="inputTemp" class="center-multiple col off">
+          <div class="center depara center-multiple">
+            <label for="de">De:</label>
+            <label for="para">Para:</label>
+          </div>
+          <div class="center-multiple depara">
+            <select name="de" id="deTemp" class="center">
+              <option value="">Unidade de origem</option>
+              <option value="f">Fahrenheit</option>
+              <option value="c">Celsius</option>
+              <option value="k">Kelvin</option>
+            </select>
+            <select name="para" id="paraTemp" class="center">
+              <option value="">Unidade de destino</option>
+              <option value="f">Fahrenheit</option>
+              <option value="c">Celsius</option>
+              <option value="k">Kelvin</option>
+            </select>
+          </div>
+        </div>
+        <div id="inputTime" class="center-multiple col off">
+          <div class="center depara center-multiple">
+            <label for="de">De:</label>
+            <label for="para">Para:</label>
+          </div>
+          <div class="center-multiple depara">
+            <select name="de" id="deTime" class="center">
+              <option value="">Unidade de origem</option>
+              <option value="s">Segundo</option>
+              <option value="m">Minuto</option>
+              <option value="h">Hora</option>
+              <option value="d">Dia</option>
+              <option value="w">Semana</option>
+            </select>
+            <select name="para" id="paraTime" class="center">
+              <option value="">Unidade de destino</option>
+              <option value="s">Segundo</option>
+              <option value="m">Minuto</option>
+              <option value="h">Hora</option>
+              <option value="d">Dia</option>
+              <option value="w">Semana</option>
+            </select>
+          </div>
+        </div>
+        <div id="inputDist" class="center-multiple col off">
+          <div class="center depara center-multiple">
+            <label for="de">De:</label>
+            <label for="para">Para:</label>
+          </div>
+          <div class="center-multiple depara">
+            <select name="de" id="deDist" class="center">
+              <option value="">Unidade de origem</option>
+              <option value="mm">Milímetro</option>
+              <option value="cm">Centímetro</option>
+              <option value="m">Metro</option>
+              <option value="km">Quilômetro</option>
+              <option value="an">Ano Luz</option>
+              <option value="pol">Polegada</option>
+              <option value="pe">Pé</option>
+            </select>
+            <select name="para" id="paraDist" class="center">
+              <option value="">Unidade de destino</option>
+              <option value="mm">Milimetro</option>
+              <option value="cm">Centimetro</option>
+              <option value="m">Metro</option>
+              <option value="km">Kilometro</option>
+              <option value="an">Ano Luz</option>
+              <option value="pol">Polegada</option>
+              <option value="pe">Pé</option>
+            </select>
+          </div>
+        </div>
+        <div id="inputMas" class="center-multiple col off">
+          <div class="center depara center-multiple">
+            <label for="de">De:</label>
+            <label for="para">Para:</label>
+          </div>
+          <div class="center-multiple depara">
+            <select name="de" id="deMas" class="center">
+              <option value="">Unidade de origem</option>
+              <option value="t">Tonelada</option>
+              <option value="Kg">Quilograma</option>
+              <option value="g">Grama</option>
+              <option value="mg">Miligrama</option>
+              <option value="s">Stone</option>
+              <option value="lb">Libra</option>
+              <option value="on">Onça</option>
+            </select>
+            <select name="para" id="paraMas" class="center">
+              <option value="">Unidade de destino</option>
+              <option value="t">Tonelada</option>
+              <option value="Kg">Quilograma</option>
+              <option value="g">Grama</option>
+              <option value="mg">Miligrama</option>
+              <option value="s">Stone</option>
+              <option value="lb">Libra</option>
+              <option value="on">Onça</option>
+            </select>
+          </div>
+        </div>
+        <div id="inputMoe" class="center-multiple col off">
+          <div class="center depara center-multiple">
+            <label for="de">De:</label>
+            <label for="para">Para:</label>
+          </div>
+          <div class="center-multiple depara">
+            <select name="de" id="deMoe" class="center">
+              <option value="">Unidade de origem</option>
+              <option value="r">Real</option>
+              <option value="ud">Dólar americano</option>
+              <option value="cd">Dólar canadense</option>
+              <option value="e">Euro</option>
+            </select>
+            <select name="para" id="paraMoe" class="center">
+              <option value="">Unidade de destino</option>
+              <option value="r">Real</option>
+              <option value="ud">Dólar americano</option>
+              <option value="cd">Dólar canadense</option>
+              <option value="e">Euro</option>
+            </select>
+          </div>
+        </div>
+        
+        <div id="numberInput" class="center-multiple depara off">
+            <input id="valIn" type="number" step="0.01" placeholder="Digite o valor (ex: 1,03)">
+            <input id="result" type="number" placeholder="Valor convertido" readonly>
+          </div>
+        <button class="botao off" onclick="converter()">Converter</button>
+        <div id="obsMoe" Class="center off">
+            <p>Obs: As conversões monetarias foram feitas com base na cotação do dia 15/09/2021 as 18:43</p>
+          </div>
+      </div>
+</body>
+</html>
