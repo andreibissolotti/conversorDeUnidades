@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+}
+h3 {
+    margin: 0.1rem;
+    text-align: center;
+}
+  
+.geral {
+    padding: 1rem;
+    border: 1px solid yellow;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin: 5rem auto;
+    max-width: 75%;
+}
+  
+.center-multiple {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.center {
+    text-align: center;
+}
+.depara {
+    gap: 10rem;
+    padding: 0.1rem;
+}
+.col {
+    flex-direction: column;
+}
+  
+.botao {
+    display: flex;
+    margin: 20px auto;
+    padding: 0.5rem;
+    border: 1px solid yellow;
+    background-color: transparent;
+    color: yellow;
+    border-radius: 10px;
+}
+  
+.off {
+    display: none;
+}
