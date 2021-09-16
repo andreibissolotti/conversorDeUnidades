@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    font-size: 1.7rem;
 }
 h3 {
     margin: 0.1rem;
@@ -8,18 +9,42 @@ h3 {
 }
 footer {
     display: flex;
-    gap: 5rem;
+    gap: 10rem;
     justify-content: center;
 }
 header{
     padding: 20px;
 }
+input {
+    width: 25rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(226, 226, 226);
+    font-size: 1.5rem;
+}
 
+.select-depara{
+    width: 17rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(226, 226, 226);
+    font-size: 1.5rem;
+}
+.select-tipe{
+    width: 14rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color:rgb(226, 226, 226);
+    font-size: 1.5rem;
+}
 .imersao-logo{
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 125px;
+    width: 150px;
 }
 .alura-logo{
     position: absolute;
@@ -28,28 +53,28 @@ header{
     width: 70px;
 }
 .geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     padding: 1rem;
     border: 1px solid yellow;
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
+    border-width: 3px;
     margin: 5rem auto;
     max-width: 75%;
 }
  
 .center-multiple {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-around;
+    gap: 0.5rem;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
 }
 .center {
     text-align: center;
-}
-.depara {
-    gap: 10rem;
-    padding: 0.1rem;
 }
 .col {
     flex-direction: column;
@@ -57,12 +82,14 @@ header{
   
 .botao {
     display: flex;
+    justify-content: space-around;
     margin: 20px auto;
     padding: 0.5rem;
-    border: 1px solid yellow;
+    border: 2px solid yellow;
     background-color: transparent;
     color: yellow;
     border-radius: 10px;
+    width: 10rem;
 }
   
 .off {

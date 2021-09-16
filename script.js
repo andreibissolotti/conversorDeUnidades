@@ -627,7 +627,7 @@ function on(element){
     let mas = document.querySelector('#inputMas')
     let moe = document.querySelector('#inputMoe')
     
-    off(temp);off(time);off(dist);off(mas);off(moe)
+    off(temp);off(time);off(dist);off(mas);off(moe);off(obsMoe)
     
     switch (tipo){
       case "temp":

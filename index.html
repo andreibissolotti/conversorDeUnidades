@@ -20,7 +20,7 @@
         <h1 class="title center">Conversor de Unidades!</h1>
         <div class="center-multiple">
           <label for="tipo">Selecione o tipo de unidade:</label>
-          <select name="tipo" id="tipo" class="center" onchange="tipoUnidade()">
+          <select name="tipo" id="tipo" class="center select-tipe" onchange="tipoUnidade()">
             <option value="">Selecione</option>
             <option value="temp">Temperatura</option>
             <option value="time">Tempo</option>
@@ -32,18 +32,18 @@
         <h3 id="subTitle" class="off"></h3>
         
         <div id="inputTemp" class="center-multiple col off">
-          <div class="center depara center-multiple">
+          <div class="center center-multiple">
             <label for="de">De:</label>
             <label for="para">Para:</label>
           </div>
-          <div class="center-multiple depara">
-            <select name="de" id="deTemp" class="center">
+          <div class="center-multiple">
+            <select name="de" id="deTemp" class="center select-depara">
               <option value="">Unidade de origem</option>
               <option value="f">Fahrenheit</option>
               <option value="c">Celsius</option>
               <option value="k">Kelvin</option>
             </select>
-            <select name="para" id="paraTemp" class="center">
+            <select name="para" id="paraTemp" class="center select-depara">
               <option value="">Unidade de destino</option>
               <option value="f">Fahrenheit</option>
               <option value="c">Celsius</option>
@@ -52,12 +52,12 @@
           </div>
         </div>
         <div id="inputTime" class="center-multiple col off">
-          <div class="center depara center-multiple">
+          <div class="center center-multiple">
             <label for="de">De:</label>
             <label for="para">Para:</label>
           </div>
-          <div class="center-multiple depara">
-            <select name="de" id="deTime" class="center">
+          <div class="center-multiple">
+            <select name="de" id="deTime" class="center select-depara">
               <option value="">Unidade de origem</option>
               <option value="s">Segundo</option>
               <option value="m">Minuto</option>
@@ -65,7 +65,7 @@
               <option value="d">Dia</option>
               <option value="w">Semana</option>
             </select>
-            <select name="para" id="paraTime" class="center">
+            <select name="para" id="paraTime" class="center select-depara">
               <option value="">Unidade de destino</option>
               <option value="s">Segundo</option>
               <option value="m">Minuto</option>
@@ -76,12 +76,12 @@
           </div>
         </div>
         <div id="inputDist" class="center-multiple col off">
-          <div class="center depara center-multiple">
+          <div class="center center-multiple">
             <label for="de">De:</label>
             <label for="para">Para:</label>
           </div>
-          <div class="center-multiple depara">
-            <select name="de" id="deDist" class="center">
+          <div class="center-multiple">
+            <select name="de" id="deDist" class="center select-depara">
               <option value="">Unidade de origem</option>
               <option value="mm">Milímetro</option>
               <option value="cm">Centímetro</option>
@@ -91,7 +91,7 @@
               <option value="pol">Polegada</option>
               <option value="pe">Pé</option>
             </select>
-            <select name="para" id="paraDist" class="center">
+            <select name="para" id="paraDist" class="center select-depara">
               <option value="">Unidade de destino</option>
               <option value="mm">Milimetro</option>
               <option value="cm">Centimetro</option>
@@ -104,12 +104,12 @@
           </div>
         </div>
         <div id="inputMas" class="center-multiple col off">
-          <div class="center depara center-multiple">
+          <div class="center center-multiple">
             <label for="de">De:</label>
             <label for="para">Para:</label>
           </div>
-          <div class="center-multiple depara">
-            <select name="de" id="deMas" class="center">
+          <div class="center-multiple">
+            <select name="de" id="deMas" class="center select-depara">
               <option value="">Unidade de origem</option>
               <option value="t">Tonelada</option>
               <option value="Kg">Quilograma</option>
@@ -119,7 +119,7 @@
               <option value="lb">Libra</option>
               <option value="on">Onça</option>
             </select>
-            <select name="para" id="paraMas" class="center">
+            <select name="para" id="paraMas" class="center select-depara">
               <option value="">Unidade de destino</option>
               <option value="t">Tonelada</option>
               <option value="Kg">Quilograma</option>
@@ -132,19 +132,19 @@
           </div>
         </div>
         <div id="inputMoe" class="center-multiple col off">
-          <div class="center depara center-multiple">
+          <div class="center center-multiple">
             <label for="de">De:</label>
             <label for="para">Para:</label>
           </div>
-          <div class="center-multiple depara">
-            <select name="de" id="deMoe" class="center">
+          <div class="center-multiple">
+            <select name="de" id="deMoe" class="center select-depara">
               <option value="">Unidade de origem</option>
               <option value="r">Real</option>
               <option value="ud">Dólar americano</option>
               <option value="cd">Dólar canadense</option>
               <option value="e">Euro</option>
             </select>
-            <select name="para" id="paraMoe" class="center">
+            <select name="para" id="paraMoe" class="center select-depara">
               <option value="">Unidade de destino</option>
               <option value="r">Real</option>
               <option value="ud">Dólar americano</option>
@@ -154,7 +154,7 @@
           </div>
         </div>
         
-        <div id="numberInput" class="center-multiple depara off">
+        <div id="numberInput" class="center-multiple off">
             <input id="valIn" type="number" step="0.01" placeholder="Digite o valor (ex: 1,03)">
             <input id="result" type="number" placeholder="Valor convertido" readonly>
           </div>
